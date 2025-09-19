@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exercise 3 — Display & Positioning</title>
+  <!-- TODO: Students — add CSS here (internal <style>) OR link an external CSS file.
+       Requirements:
+       A) Create a vertical menu by converting inline <a> links to block-level elements.
+       B) Create a horizontal menu using inline-block links.
+       C) Position the .login-btn absolutely at the top-right corner of the header.
+  -->
+       <style>
+         #vertical-menu a{
+          display: block;
+          margin-left :10px;
+          margin-bottom: 20px;
+          border:1px solid rgb(255, 255, 255);
+          box-shadow: 2px 2px 2px rgb(234, 231, 231);
+          width:80px;
+          text-align: center;
+          height:20px;
+          text-decoration: none;
+        }
+        #vertical-menu{
+          border:2px white solid;
+          border-radius: 10px;
+          border-style: solid;
+          box-shadow: 2px 2px 2px rgb(237, 234, 234);         
+          width: 200px;
+          padding: 10px;
+          margin-bottom: 50px;
+          align-items: center;
+        }
+       #horizontal-menu a{
+          display: inline-block;
+          margin-left: 25px;
+          border:1px solid rgb(255, 255, 255);
+          box-shadow: 2px 2px 2px rgb(234, 231, 231);
+          width:80px;
+          text-align: center;
+          height:20px;
+          text-decoration: none;
+       }
+       .login-btn{
+        margin-left: 100vw;
+        position: absolute;
+        top: 10px;
+        border: 2px solid black;
+        padding: 5px 10px;
+       }
+       #horizontal-menu{
+        border: 2px solid white;
+        width: 500px;
+        padding: 10px;
+        border-radius: 10px;
+        margin-bottom: 50px;
+        border-style: solid;
+        box-shadow: 2px 2px 2px rgb(199, 196, 196);
+        position: absolute;
+        height: 200px;
+        margin-left: 40vw;
+
+       }
+       main{
+        display: flex;
+       }
+       </style>
+
+</head>
+<body>
+  <header>
+    <h1>Exercise 3: Display & Positioning</h1>
+    <div class="login-btn">Login</div>
+  </header>
+
+  <main>
+    <section id="vertical-menu">
+      <h2>Vertical Menu (Block Links)</h2>
+      <nav class="vertical">
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">Pricing</a>
+        <a href="#">Contact</a>
+      </nav>
+    </section>
+
+    <section id="horizontal-menu">
+      <h2>Horizontal Menu (Inline-Block Links)</h2>
+      <nav class="horizontal">
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">Pricing</a>
+        <a href="#">Contact</a>
+      </nav>
+    </section>
+  </main>
+</body>
+</html>

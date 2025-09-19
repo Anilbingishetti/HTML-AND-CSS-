@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day-4</title>
+</head>
+<body>
+     <header id="regi">
+        <h1>Registration Form</h1>
+     </header>
+     <form action="Submit">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+         
+        <label for="Gender">Gender</label><br>
+        <input type="radio" name = "Male" required/>Male
+        <input type="radio" name = "Female" required/>Female
+         <br><br>
+        <label for="Skills">Skills</label><br>
+        <input type="checkbox" name="Java" id="j1">Java <br>
+        <input type="Checkbox" name="python" id="p1">python <br>
+        <input type="checkbox" name="html" id="h1">htm <br>
+        <br><br>
+        <select name="Country" id="c1">
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+            <option value="UK">UK</option>
+            <option value="Canada">Canada</option>
+        </select>
+        <br><br>
+        <input type="submit" value="Register">
+     </form>
+<br>
+<hr>
+
+     <header id = "header">
+        <h1>BLOG</h1>
+        <nav>
+            <a href="#regi">Home</a>
+            <a href="#header">About</a>
+            <a href="Day3.html">Services</a>
+            <a href=#contact>Contact</a>
+        </nav>
+     </header>
+     <main>
+        <section>
+            <article>
+                <h2>My First Blog Post</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque aliquam odio et faucibus. Nulla rhoncus feugiat eros quis consectetur.</p>
+                <p>Donec vel mauris quam. Sed vel lacus id magna lacinia sagittis. Curabitur ut libero euismod, fermentum justo at, tincidunt orci.</p>
+            </article>
+            <article>
+                <h2>Another Interesting Post</h2>
+                <p>Praesent euismod, nisi vel consectetur interdum, nisl nisi aliquet nunc, a bibendum nulla sapien in libero. Vivamus non felis nec erat cursus tincidunt.</p>
+                <p>Fusce sit amet urna at elit efficitur tincidunt. Integer non turpis ac leo efficitur varius. Sed a dui ut lacus dictum fermentum.</p>
+            </article>
+        </section>
+        <aside>
+            <p>somethig is random</p>
+        </aside>
+        <footer>
+            <p>&copy; 2024 My Blog. All rights reserved.</p>
+        </footer>
+     </main>
+     <br><br>
+<hr>
+<br><br>
+       <main>
+        <section id="contact">
+            <h1>Contact us</h1>
+            <form action="Submit">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+
+                <input type="submit" value="Send">
+        </section>
+        <footer>
+            <p>&copy; 2024 Contact us. All rights reserved.</p>
+        </footer>
+       </main>
+</body>
+</html>
